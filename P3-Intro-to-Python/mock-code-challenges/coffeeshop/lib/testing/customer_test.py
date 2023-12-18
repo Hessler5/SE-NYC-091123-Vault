@@ -88,7 +88,7 @@ class TestCustomer:
 
     def test_can_place_order(self):
         ''' Tests that a customer can place an order/transaction using a string name and numerical price. '''
-        # coffee = Coffee("Espresso")
+        coffee = Coffee("Espresso")
         customer = Customer('Steve')
         transaction = customer.place_order("Espresso", 3)
         assert (transaction.coffee in customer.access_current_coffees())
